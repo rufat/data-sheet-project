@@ -1,0 +1,84 @@
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.sheet-container {
+    width: 90%;
+}
+
+.data-grid-container {
+    font-family: Open Sans,sans-serif;
+}
+
+.data-grid-container:focus {
+    outline: none;
+}
+
+.data-grid {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+table.data-grid tr {
+    background: #fff;
+}
+
+.data-grid .cell.read-only {
+    background: #f5f5f5;
+    color: #999;
+    text-align: center;
+}
+
+.data-grid-container .data-grid .cell {
+    cursor: cell;
+    user-select: none;
+}
+
+.data-grid-container .data-grid .cell.selected {
+    border: 1px double #2185d0;
+    transition: none;
+    box-shadow: inset 0 -100px 0 rgba(33,133,208,.15);
+}
+
+.data-grid-container .data-grid .cell .value-viewer {
+    display: block;
+    padding: 10px;
+}
+
+.sheet-container table.data-grid tr td.cell, .sheet-container table.data-grid tr th.cell {
+    font-size: 12px;
+}
+
+.sheet-container table.data-grid tr td.cell:not(.selected) {
+    border: 1px solid #ececec;
+}
+
+.data-grid-container .data-grid .cell input {
+    background: white;
+    display: flex;
+    border: 0;
+    font-size: 12px;
+}
+
+.sheet-container table.data-grid tr .row-actions {
+    display: flex;
+}
+
+.sheet-container table.data-grid tr .row-actions .row-action-button {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.actions-container {
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.actions-container button {
+    cursor: pointer;
+}
