@@ -47,7 +47,7 @@ function App() {
         data={employeeData}
         onSubmit={onSubmit}
       />
-      <p>Hint: Press <b>"Enter"</b> to update the cell.</p>
+      <p>Hint: "Double-click" to open in-line editor and press <b>"Enter"</b> to update the cell.</p>
       <p>Developed by Rufat Mammadli (<a href="http://github.com/rufat" target="_blank" rel="noreferrer">@rufat</a>)</p>
     </div>
   );
